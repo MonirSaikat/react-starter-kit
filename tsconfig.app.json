@@ -9,6 +9,8 @@
     "skipLibCheck": true,
     "baseUrl": "./src",
     "paths": {
+      "@hooks/*": ["./hooks/*"],
+      "@providers/*": ["./providers/*"],
       "@pages/*": ["./pages/*"],
       "@components/*": ["./components/*"],
       "@elements/*": ["./elements/*"],

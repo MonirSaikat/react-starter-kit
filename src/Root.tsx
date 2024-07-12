@@ -3,14 +3,17 @@ import { ThemeProvider } from "@emotion/react";
 import { Navbar } from "@components/shared/Navbar";
 import { cosmicGroove } from "@styles/themes/cosmicGroove";
 import { Footer } from "@components/shared/Footer";
+import { AuthProvider } from "@providers/AuthProvider";
 
 function Root() {
   return (
-    <ThemeProvider theme={cosmicGroove}>
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </ThemeProvider>
+    <AuthProvider>
+      <ThemeProvider theme={cosmicGroove}>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </ThemeProvider>
+    </AuthProvider>
   );
 }
 
