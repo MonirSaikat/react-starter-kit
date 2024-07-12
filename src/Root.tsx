@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import { Navbar } from "./components/shared/Navbar";
 import { ThemeProvider } from "@emotion/react";
-import { cosmicGroove } from "./styles/themes/cosmicGroove";
+import { Navbar } from "@components/shared/Navbar";
+import { cosmicGroove } from "@styles/themes/cosmicGroove";
 
 function Root() {
   return (

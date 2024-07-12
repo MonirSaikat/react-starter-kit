@@ -1,4 +1,4 @@
-import { Banner } from "../components/pages/home/Banner";
+import { Banner } from "@components/pages/home/Banner";
 
 export const Home = () => {
   return (

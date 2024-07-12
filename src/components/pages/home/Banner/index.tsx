@@ -1,4 +1,4 @@
-import { Text } from "../../../../elements/Text";
+import { Text } from "@elements/Text";
 import { StyledBanner } from "./Banner.styled";
 
 export const Banner = () => {

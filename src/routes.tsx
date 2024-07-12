@@ -1,8 +1,8 @@
+import { App } from "@pages/App";
+import { Home } from "@pages/Home";
+import { Site } from "@pages/Site";
 import { createBrowserRouter } from "react-router-dom";
-import Root from "./Root";
-import { Site } from "./pages/Site";
-import { App } from "./pages/App";
-import { Home } from "./pages/Home";
+import Root from "Root";
 
 export const router = createBrowserRouter([
   {
