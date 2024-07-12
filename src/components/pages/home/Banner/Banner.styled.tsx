@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const StyledBanner = styled.div`
-  background: ${props => props.theme.primaryBg};
+  background: ${props => props.theme.color.primary};
   padding: 1rem;
   text-align: center;
 

@@ -5,10 +5,11 @@ export const StyledNavbar = styled.nav`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  background-color: ${props => props.theme.color.secondary};
 
   a {
     text-decoration: none;
-    color: ${props => props.theme.dark};
+    color: ${(props) => props.theme.color.light};
     font-weight: 700;
   }
 `;
