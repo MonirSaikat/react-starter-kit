@@ -9,9 +9,4 @@ export const StyledBanner = styled.div`
   h1 {
     font-size: 4rem;
   }
-
-  p {
-    text-align: center;
-    font-size: 1.5rem;
-  }
 `;
