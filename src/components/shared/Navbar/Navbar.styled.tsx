@@ -9,7 +9,7 @@ export const StyledNavbar = styled.nav`
 
   a {
     text-decoration: none;
-    color: ${(props) => props.theme.color.light};
+    color: ${props => props.theme.color.light};
     font-weight: 700;
   }
 `;
