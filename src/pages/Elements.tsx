@@ -1,15 +1,18 @@
 import { Input } from "@elements/Input";
 import { Col, Container, Row } from "react-bootstrap";
+import { Icon } from '@iconify/react';
 
 export const Elements = () => {
+  const icon = <Icon icon="mdi:password" />;
+
   return (
     <Container fluid className="my-4">
-      <Row class="d-flex gap-2">
+      <Row className="d-flex gap-2">
         <Col md={3}>
-          <Input placeholder="Enter your name" />
+          <Input placeholder="Enter your name" icon={icon} />
         </Col>
         <Col md={3}>
-          <Input type="password" placeholder="Choose username" />
+          <Input type="password" placeholder="Create password" />
         </Col>
         <Col md={3}>
           <Input type="number" placeholder="Age" />
