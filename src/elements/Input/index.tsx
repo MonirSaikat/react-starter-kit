@@ -1,20 +1,18 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { StyledInput, StyledInputContainer } from "./Input.styled";
 
-interface IInput {
-  icon?: React.FC;
-  iconPosition: 'left' | 'right';
+interface IInput extends Partial<React.ComponentProps<'input'>> {
+  icon?: ReactNode;
+  iconPosition?: 'left' | 'right';
 }
 
-export const Input = ({ iconPosition = 'right', ...rest }: IInput) => {
-  const { icon } = rest;
-
-  if (!icon) return <StyledInput {...rest} />;
-
-  return (
+export const Input: React.FC<IInput> = ({ icon, iconPosition = 'right', ...otherProps }) => {
+  return icon ? (
     <StyledInputContainer iconPosition={iconPosition}>
       <div className="icon">{icon}</div>
-      <StyledInput {...rest} />
+      <StyledInput {...otherProps} />
     </StyledInputContainer>
+  ) : (
+    <StyledInput {...otherProps} />
   );
-}
+};

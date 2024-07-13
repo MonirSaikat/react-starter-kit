@@ -1,7 +1,11 @@
 import styled from "@emotion/styled";
-import { FormControl } from 'react-bootstrap';
+import { FormControl, FormControlProps } from 'react-bootstrap';
 
-export const StyledInputContainer = styled.div`
+interface StyledInputContainerProps {
+  iconPosition: 'left' | 'right';
+}
+
+export const StyledInputContainer = styled.div<StyledInputContainerProps>`
   position: relative;
   display: flex;
 
@@ -17,7 +21,7 @@ export const StyledInputContainer = styled.div`
   }
 `;
 
-export const StyledInput = styled(FormControl)`
+export const StyledInput = styled(FormControl) <FormControlProps>`
   border-radius: 0px;
   box-shadow: 0 0 0;
   border-radius: 6px;
