@@ -6,5 +6,9 @@ export const neonDreamscape: Theme = {
     secondary: "#FF007F",
     light: "#D4FFFE",
     dark: "#2F2F2F",
+    danger: "red",
+    warning: "yellow",
+    success: "green",
+    info: "blue"
   },
 };

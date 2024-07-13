@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom";
 import { StyledNavbar } from "./Navbar.styled";
-import { Button } from "@elements/Button";
 
-export const Navbar = () => {
+export const Navbar = ({ links = [] }) => {
   return (
     <StyledNavbar>
-      <Link to="/">Home</Link>
-      <Link to="/site">Site</Link>
-      <Link to="/app">App</Link>
-      <Button variant="danger">Logout</Button>
+      {links.map(({ text, path }) => <Link to={path} key={path}>{text}</Link>)}
     </StyledNavbar>
   );
 };

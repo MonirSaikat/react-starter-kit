@@ -6,9 +6,20 @@ import { Footer } from "@components/shared/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Root() {
+  const links = [
+    {
+      text: 'Home',
+      path: '/',
+    },
+    {
+      text: 'Components',
+      path: '/components',
+    }
+  ];
+
   return (
     <ThemeProvider theme={cosmicGroove}>
-      <Navbar />
+      <Navbar links={links} />
       <Outlet />
       <Footer />
     </ThemeProvider>
