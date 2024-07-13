@@ -2,6 +2,14 @@
 
 This repository contains a bunch of useful project starter for react with typescript. All of those features are available in different branches. 
 
+### Branches
+| Branch      | Link |
+| ----------- | ----------- |
+| Main      | [View](https://github.com/MonirSaikat/react-starter-kit)|
+| Context Api   | [View](https://github.com/MonirSaikat/react-starter-kit/tree/context-api)|
+| UI   | [View](https://github.com/MonirSaikat/react-starter-kit/tree/ui)|
+
+
 ### Project Structure
 ```md
 src/
