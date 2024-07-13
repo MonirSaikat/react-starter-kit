@@ -1,5 +1,6 @@
 import { App } from "@pages/App";
 import { Components } from "@pages/Components";
+import { Elements } from "@pages/Elements";
 import { Home } from "@pages/Home";
 import { Site } from "@pages/Site";
 import { createBrowserRouter } from "react-router-dom";
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
       {
         path: "components",
         element: <Components />,
+      },
+      {
+        path: "elements",
+        element: <Elements />,
       },
       {
         path: "app",

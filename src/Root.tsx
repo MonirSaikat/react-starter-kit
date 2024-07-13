@@ -12,6 +12,10 @@ function Root() {
       path: '/',
     },
     {
+      text: 'Elements',
+      path: '/elements',
+    },
+    {
       text: 'Components',
       path: '/components',
     }
