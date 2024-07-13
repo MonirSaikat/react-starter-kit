@@ -1,6 +1,12 @@
+import React from "react";
 import { StyledInput, StyledInputContainer } from "./Input.styled";
 
-export const Input = ({ iconPosition = 'right', ...rest }) => {
+interface IInput {
+  icon?: React.FC;
+  iconPosition: 'left' | 'right';
+}
+
+export const Input = ({ iconPosition = 'right', ...rest }: IInput) => {
   const { icon } = rest;
 
   if (!icon) return <StyledInput {...rest} />;
