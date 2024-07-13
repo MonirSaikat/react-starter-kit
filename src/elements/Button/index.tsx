@@ -1,8 +1,8 @@
 import React from "react";
 import { StyledButton } from "./Button.styled";
 
-export const Button: React.FC = ({ children }) => {
+export const Button: React.FC = ({ children, ...props }) => {
   return (
-    <StyledButton>{children}</StyledButton>
+    <StyledButton {...props}>{children}</StyledButton>
   );
 }
