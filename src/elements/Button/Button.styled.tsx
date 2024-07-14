@@ -12,8 +12,8 @@ export const StyledButton = styled(Button) <IButton>`
   position: relative;
   --gapping: 10px;
 
-  ${({ icon, iconPosition }) =>
-    icon
+  ${({ icon, iconPosition, loading }) =>
+    (icon == 'true' && loading != 'true')
       ? iconPosition === 'right'
         ? 'padding-right: calc(var(--gapping) * 3);'
         : 'padding-left: calc(var(--gapping) * 3);'
