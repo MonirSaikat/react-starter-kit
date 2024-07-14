@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { darken, lighten } from "polished";
+import { lighten } from "polished";
 import { Alert } from "react-bootstrap";
 
 export const StyledAlert = styled(Alert)` 
