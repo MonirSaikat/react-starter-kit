@@ -9,7 +9,7 @@ export const Elements = () => {
     <Container fluid className="my-4">
       <Row className="">
         <Col md={3}>
-          <Input label="Full Name" placeholder="Enter your name" iconPosition="left" icon={<Icon icon="mdi:user" />} />
+          <Input label="Full Name" type="switch" placeholder="Enter your name" iconPosition="left" icon={<Icon icon="mdi:user" />} />
         </Col>
         <Col md={3}>
           <Input label="Password" type="password" placeholder="Create password" icon={<Icon icon="mdi:password" />} />
@@ -23,7 +23,7 @@ export const Elements = () => {
       </Row>
 
       <div className="d-flex gap-2 my-4">
-        <Button variant="primary" icon={<Icon icon="mdi:key" />}>Primary</Button>
+        <Button variant="primary" icon={<Icon icon="mdi:home" />} iconPosition="right" >Primary</Button>
         <Button variant="secondary" icon={<Icon icon="mdi:user" />}>Secondary</Button>
         <Button variant="success">Success</Button>
         <Button variant="warning">Warning</Button>

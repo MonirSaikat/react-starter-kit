@@ -14,6 +14,17 @@ interface IInput extends Omit<Partial<React.ComponentProps<'input'>>, 'size'> {
 export const Input: React.FC<IInput> = ({ label, icon, iconPosition = 'right', size, ...otherProps }) => {
   const styledInput = <StyledInput size={size} {...otherProps} />;
 
+  if (['checkbox', 'radio', 'switch'].includes(otherProps.type)) {
+    return (
+      <Form.Check
+        type={otherProps.type || 'checkbox'}
+        label={label}
+        id={Math.random().toString(36)}
+        {...otherProps}
+      />
+    );
+  }
+
   const styledContainer = (
     <StyledInputContainer iconPosition={iconPosition}>
       <div className="icon">{icon}</div>
@@ -23,9 +34,9 @@ export const Input: React.FC<IInput> = ({ label, icon, iconPosition = 'right', s
 
   if (label) {
     return (
-      <Form.Group controlId={ Math.random().toString(36) }>
-        <Label>{ label }</Label>
-        { icon ? styledContainer : styledInput }
+      <Form.Group controlId={Math.random().toString(36)}>
+        <Label>{label}</Label>
+        {icon ? styledContainer : styledInput}
       </Form.Group>
     );
   }
