@@ -9,6 +9,6 @@ export const cosmicGroove: Theme = {
     danger: "#C1224F",
     warning: "#F5DD61",
     success: "#219C90",
-    info: "#3FA2F6"
+    info: "#3FA2F6",
   },
 };

@@ -11,6 +11,7 @@ declare module "@emotion/react" {
       success?: string;
       warning?: string;
       info?: string;
+      link?: string;
     };
   }
 }

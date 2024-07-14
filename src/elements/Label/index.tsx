@@ -1,6 +1,8 @@
 import { StyledLabel } from "./Label.styled";
 
-export const Label = ({ children }) => {
+interface ILabel extends React.ComponentProps<'label'> {}
+
+export const Label: React.FC<ILabel> = ({ children }) => {
   return (
     <StyledLabel>
       {children}
