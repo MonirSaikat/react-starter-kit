@@ -8,13 +8,13 @@ interface IInput extends Omit<Partial<React.ComponentProps<'input'>>, 'size'> {
   value?: string | undefined | string[];
 }
 
-export const Input: React.FC<IInput> = ({ icon, iconPosition = 'right', ...otherProps }) => {
+export const Input: React.FC<IInput> = ({ icon, iconPosition = 'right', size, ...otherProps }) => {
   return icon ? (
     <StyledInputContainer iconPosition={iconPosition}>
       <div className="icon">{icon}</div>
-      <StyledInput {...otherProps} />
+      <StyledInput size={size} {...otherProps} />
     </StyledInputContainer>
   ) : (
-    <StyledInput {...otherProps} />
+    <StyledInput size={size} {...otherProps} />
   );
 };

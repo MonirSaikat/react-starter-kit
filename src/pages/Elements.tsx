@@ -8,7 +8,7 @@ export const Elements = () => {
     <Container fluid className="my-4">
       <Row className="">
         <Col md={3}>
-          <Input placeholder="Enter your name" icon={<Icon icon="mdi:user" />} />
+          <Input size="sm" placeholder="Enter your name" iconPosition="left" icon={<Icon icon="mdi:user" />} />
         </Col>
         <Col md={3}>
           <Input type="password" placeholder="Create password" icon={<Icon icon="mdi:password" />} />

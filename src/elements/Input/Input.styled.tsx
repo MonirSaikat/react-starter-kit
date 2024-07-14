@@ -12,7 +12,8 @@ export const StyledInputContainer = styled.div<StyledInputContainerProps>`
   .icon {
     position: absolute;
     ${({ iconPosition }) => iconPosition === 'left' ? 'left: 10px;' : 'right: 10px;'}
-    top: 5px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   input {
@@ -26,7 +27,7 @@ export const StyledInput = styled(FormControl) <FormControlProps>`
   box-shadow: 0 0 0;
   border-radius: 6px;
   border: 1px solid #a5a5a5;
-  padding: 0.5rem 1rem;
+  padding: ${props => props.size == 'sm' ? '0.3rem 0.8rem' : '0.5rem 1rem'};
   font-size: 0.8rem;
 
   &:focus {
