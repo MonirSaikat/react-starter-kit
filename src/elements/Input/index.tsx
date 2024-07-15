@@ -14,7 +14,7 @@ interface IInput extends Omit<Partial<React.ComponentProps<'input'>>, 'size'> {
 export const Input: React.FC<IInput> = ({ label, icon, iconPosition = 'right', size, ...otherProps }) => {
   const styledInput = <StyledInput size={size} {...otherProps} />;
 
-  if (['checkbox', 'radio', 'switch'].includes(otherProps.type)) {
+  if (['checkbox', 'radio', 'switch'].includes(otherProps.type as string)) {
     return (
       <Form.Check
         type={otherProps.type || 'checkbox'}
