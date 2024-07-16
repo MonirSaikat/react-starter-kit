@@ -1,9 +1,22 @@
 import styled from "@emotion/styled";
-import { FormControl, FormControlProps } from 'react-bootstrap';
+import { FormCheck, FormControl, FormControlProps } from 'react-bootstrap';
 
 interface StyledInputContainerProps {
   iconPosition: 'left' | 'right';
 }
+
+export const StyledChecked = styled( FormCheck)`
+
+[type=${(props) => props.type}] {
+    accent-color: ${props => props.theme.color.primary} !important;
+    background-color: ${props => props.theme.color.primary} !important;
+    color: ${props => props.theme.color.primary} !important;
+    box-shadow: 0 0 0;
+  }
+  /* input[type="checkbox"] {
+    accent-color: ${props => props.theme.color.primary};
+  } */
+`;
 
 export const StyledInputContainer = styled.div<StyledInputContainerProps>`
   position: relative;

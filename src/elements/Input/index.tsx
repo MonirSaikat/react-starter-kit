@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { StyledInput, StyledInputContainer } from "./Input.styled";
+import { StyledChecked, StyledInput, StyledInputContainer } from "./Input.styled";
 import { Form } from "react-bootstrap";
 import { Label } from "@elements/Label";
 
@@ -16,8 +16,8 @@ export const Input: React.FC<IInput> = ({ label, icon, iconPosition = 'right', s
 
   if (['checkbox', 'radio', 'switch'].includes(otherProps.type as string)) {
     return (
-      <Form.Check
-        type={otherProps.type || 'checkbox'}
+      <StyledChecked
+        type={otherProps || 'radio'}
         label={label}
         id={Math.random().toString(36)}
         {...otherProps}
